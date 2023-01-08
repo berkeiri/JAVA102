@@ -89,6 +89,7 @@ public class Player {
                 setMoney(5);
                 setName("cafer");
                 System.out.println(getDamage());
+                break;
             default:
                 System.out.println("geçerli bir seçim yapınız");
         }

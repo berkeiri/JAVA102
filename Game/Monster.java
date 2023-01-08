@@ -60,9 +60,24 @@ public class Monster {
     }
 
     public static void zombi(){
+        setName("Zombi");
         setId(1);
         setDamage(3);
         setHealty(10);
         setMoney(4);
+    }
+    public static void vampir(){
+        setName("Vampir");
+        setId(2);
+        setDamage(4);
+        setHealty(14);
+        setMoney(7);
+    }
+    public static void ayi(){
+        setName("Ayı");
+        setId(3);
+        setDamage(7);
+        setHealty(20);
+        setMoney(12);
     }
 }
