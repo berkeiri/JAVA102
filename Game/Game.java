@@ -8,12 +8,10 @@ public class Game {
         Player player=new Player();
         Monster monster=new Monster();
         Inventory inventory=new Inventory();
-        Location location=new Location();
         player.selectChar();
         System.out.println("playerin gücü:"+player.getDamage()+"playerin parası:"+player.getMoney()+"playerin ismi:"+player.getName());
         Location.buy();
         System.out.println("şimdiki hasar"+player.getDamage());
-        Monster.zombi();
         System.out.println(Monster.getDamage());
         System.out.println("canavar ile savaşılsın mı?");
         Scanner input=new Scanner(System.in);
@@ -33,6 +31,8 @@ public class Game {
         }else {
             System.out.println("oyuna devam edebilirsiniz");
         }
+        System.out.println("adamın sağlığı:"+player.getHealty());
+        SafeHouse.heal();
 
 
     }
